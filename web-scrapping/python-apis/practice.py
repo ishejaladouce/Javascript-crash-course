@@ -9,13 +9,12 @@ with open("users.json", "r") as users_file:
 for user in users:
     user_id = user["id"]
     user_name = user["name"]
-
     user_posts = [post for post in posts if post["userId"] == user_id]
 
-    print(f"User {user_name} has {len(user_posts)} posts")
+    print(f"User: {user_name} has {len(user_posts)} posts")
 
     if user_posts:
-        print("Posts made")
+        print("His/Her Posts:")
 
         for i, post in enumerate(user_posts, start=1):
             print(f" {i}. {post['title']}")
