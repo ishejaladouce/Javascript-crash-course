@@ -14,3 +14,8 @@ for user in users:
 
 #test  the codes if fetching the id for Leanne
 print("Leanne Graham user id: ", Leanne_id)
+
+# count total posts
+total_posts = len(posts)
+print("Total posts: ", total_posts)
+
